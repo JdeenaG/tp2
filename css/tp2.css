@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Glory&family=Overlock+SC&family=Spline+Sans+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+#global{
+    background-color: rgb(205, 201, 201);
+}
+/*Header*/
+nav{
+    background-color: rgb(241, 136, 15);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    font-family: 'Glory', sans-serif;
+    font-size: 1.5em;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 150px
+}
+nav img{
+    margin-left: 15px;
+}
+header a{
+    margin-right: 30px;
+    text-decoration: none;
+    color:white;
+}
+header a:hover{
+    color:red;
+    background-color: aqua;
+
+
+}
+header a:active{
+    color:red;
+
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+/*Première section : Acceuil*/
+section:nth-child(1){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#entete{
+    background-color: rgb(32, 169, 227);
+    display: flex;
+    justify-content: center;
+}
+#entete img{
+    padding-top: 50px;
+}
+section:nth-child(1) h1{
+    font-family: 'Overlock SC', sans-serif;
+    color:red;
+    font-size: 3.0em;
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    width: 500px;
+    
+}
+section:nth-child(1) h5{
+    display: inline-block;
+    font-family: 'Actor', sans-serif;
+
+}
+section:nth-child(1) p{
+    padding-top: 20px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Actor', sans-serif;
+
+}
+/*Deuxième section : Articles*/
+section:nth-child(2){
+    text-align: center;
+}
+section:nth-child(2) h1{
+    background-color: rgb(32, 169, 227);
+    color: red;
+    text-align: center;
+    font-size: 3.0em;
+    padding-top: 50px;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+section:nth-child(2) h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#paragrah{
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+article{
+    text-align: justify;
+    width: 50%;
+    padding: 20px;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+article p{
+    font-family: 'Actor', sans-serif;
+    padding-bottom: 10px;
+}
+article figure{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.258);
+}
+article figcaption{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    font-family: 'Actor', sans-serif;
+
+}
+
+/*Troisième section: Tableau*/
+section:nth-child(3) h1{
+    background-color: rgb(32, 169, 227);
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+table{
+    margin-top:50px;
+    height: 75vh;
+    width: 600px;
+    border : 1px solid  black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+caption{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Glory', sans-serif;
+}
+th, td{
+    border : 1px solid  black;
+    
+  }
+th[scope="col"] {
+    background-color: rgb(151, 146, 146);
+    font-family: 'Glory', sans-serif;
+  }
+th[ scope="row"]{
+    background-color: rgb(151, 146, 146);
+    font-family: 'Glory', sans-serif;
+    
+  }
+td{
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: white;
+    font-family: 'Actor';
+}
+tfoot td{
+    background-color: rgb(151, 146, 146);
+    text-align: center;
+}
+/*Section: Galerie*/
+section:nth-child(4) h1{
+    background-color: rgb(32, 169, 227);
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+#image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+#image img{
+    background-color: rgba(0, 0, 0, 0.419);
+
+}
+#image img:hover{
+    transform:scale(2);
+
+}
+#image figcaption{
+    text-align: center;
+    font-family:'Actor', sans-serif;
+    font-size: 1.5em;
+}
+
+/*Section : Vidéos*/
+section:nth-child(5) h1{
+    background-color: rgb(32, 169, 227);
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+#video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+/*Section : Inscription*/
+section:nth-child(6) h1{
+    background-color: rgb(32, 169, 227);
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+form{
+    width: 50vw;
+    background-color: rgba(133, 126, 126, 0.838);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.colonne {
+    flex: 1 0 40%;
+}
+
+ .colonne:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 5%;
+
+} 
+
+.colonne fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+#choix{
+    height:200px;
+}
+ 
+#boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 80%;
+}
+/*Pied de page*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    height: 100px;
+    margin-top:12% ;
+
+}
+footer h4{
+    padding: 3px;
+}
+.icone{
+    padding-right:20px ;
+}
